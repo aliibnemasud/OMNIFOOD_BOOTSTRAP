@@ -12,13 +12,19 @@ body {
 
 .btn-primary {
     background: #00c29e;
+    border: none;
+}
+
+.btn-primary:hover {
+    
+background: #01a586;
 }
 
 /*banner section*/
 
 .banner {
     background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/banner-bg.png);
-    height: 80vh;
+    min-height: 74vh;
     position: relative;
 }
 .banner .herobox {
@@ -79,7 +85,9 @@ max-width: 35%;
 margin: 20px auto;
 }
 
-.card {}
+.card {
+    padding: 30px 0px;
+}
 .card h5 {
     font-size: 18px;
     font-family: 'Lato', sans-serif;
@@ -103,7 +111,7 @@ margin: 20px auto;
     width: 40px;
     height: 40px;
     display: inline-block;
-    border: 2px solid #3f3f3f;
+    border: 2px solid #008882;
     border-radius: 20px;
     text-align: center;
     line-height: 34px;
@@ -222,7 +230,7 @@ margin: 20px auto;
 
 .fotter-sec {
     padding: 50px 0;
-    background: url(../img/footer-bg.png);
+    background: linear-gradient(to right, #000d0aa6, #002415d4), url(../img/footer-bg.png);
     position: relative;
 }
 .map {
@@ -252,7 +260,7 @@ margin: 20px auto;
 }
 .fotter-sec ul li a {
     color: #fff;
-    font-size: 30px;
+    font-size: 33px;
 }
 .fotter-sec ul li a i {
     margin-left: 11px;
@@ -263,9 +271,19 @@ margin: 20px auto;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 20px;
 }
-.loction {}
+.loction {
+    background: none !important;
+    color: #fff !important;
+}
 
-.social-icon {}
+.social-icon {
+    padding-left: 0;
+}
 
+.place {
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+}
